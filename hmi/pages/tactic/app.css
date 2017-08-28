@@ -1,0 +1,32 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#map {
+	flex: 1;
+}
+
+
+
+.myPopup .leaflet-popup-content {
+	margin: 5px;
+	font-size: 0.8em;
+}
+
+.myPopup .leaflet-popup-content div {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.myPopup .leaflet-popup-content-wrapper {
+	border-radius: 0px;
+	opacity: 0.8;
+}

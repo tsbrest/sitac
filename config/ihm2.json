@@ -1,0 +1,17 @@
+{
+	"map": {
+		"attributionControl": false,
+		"zoomControl": true,
+		"center": [48.3583, -4.53417],
+		"zoom": 12		
+	},
+
+	"tileLayer": {
+		"maxZoom": 19,
+		"urlTemplate": "/maps/{z}/{x}/{y}.png"
+	}
+
+
+
+
+}

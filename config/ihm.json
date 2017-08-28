@@ -1,0 +1,80 @@
+{
+	"map": {
+		"attributionControl": false,
+		"zoomControl": true,
+		"center": [48.3583, -4.53417],
+		"zoom": 12		
+	},
+
+	"tileLayer": {
+		"maxZoom": 19,
+		"urlTemplate": "/maps/{z}/{x}/{y}.png"
+	},
+
+
+	"controls": {
+		"scale": {
+			"imperial": false,
+			 "position": "bottomright"
+		},
+
+		"coordinates": {
+			"position": "bottomleft",
+			"useLatLngOrder": true,
+			"enableUserInput": false,
+			"decimals": 5			
+		},
+
+		"layers": {
+			"mission": {"label": "Mission", "visible": true},
+			"default": {"label": "Default", "visible": true},
+			"vehicule": {"label": "Vehicule", "visible": true}
+		}
+
+		
+	},
+
+	"contextmenuItems": [
+		{
+			"text": "Init drone poistion",
+			"topic": "initPos"
+		},
+
+		{
+			"text": "Target",
+			"topic": "goTarget"
+		},
+		{
+			"separator": true
+		},
+		{
+			"text": "Center map here",
+			"action": "centerMap"
+		}				
+	],	
+
+	"plugins": {
+		"AisDecoder": {
+			"contextmenuItems": [
+				{"text": "center on this vehicule", "action":"centerOnVehicule"}
+			]
+		},
+		"ShapeDecoder": {},
+		"ShapeEditor": {
+			"draw": {
+				"circle": {
+					"feet": false
+				},
+
+				"polyline": true,
+				"rectangle": false,
+				"marker": false
+
+			},
+			"edit": {
+				"featureGroup": "default"
+			}			
+		},
+		"CenterMap": {}
+	}
+}

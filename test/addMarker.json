@@ -1,0 +1,12 @@
+{
+	"shape": "marker",
+
+	"latlng": {
+		"lat":48.3583, 
+		"lng":-4.53417		
+	},
+
+	"options": {
+		"title": "Portzic"
+	}
+}

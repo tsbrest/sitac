@@ -1,0 +1,12 @@
+{
+	"shape": "marker",
+
+	"latlng": {
+		"lat":48.4, 
+		"lng":-4.47		
+	},	
+	
+	"options": {
+		"title": "Brest"
+	}
+}

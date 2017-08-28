@@ -1,0 +1,22 @@
+{
+	"masterPort": 8090,
+	"masterHost": "localhost",
+
+	"launcher": {
+		"logPath": "./logs",
+
+		"agents": {
+			"master": {"script": "master.js"},
+			"agent": {"script": "agents/reader.js", "start": "manual"},
+			"gpsProvider": {"script": "agents/gpsProvider.js", "start": "manual"},
+			"shapeAgent": {"script": "agents/shapeAgent.js", "start": "auto"},			
+			"server": {"script": "server.js", "start": "auto"},
+			"drone": {"script": "agents/drone.js", "start": "manual"},
+			"areaAgent": {"script": "agents/areaAgent.js", "start": "manual"}
+		}
+	},
+
+	"server": {
+		"port": 9000
+	}
+}
