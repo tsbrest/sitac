@@ -2,7 +2,7 @@
 
 const ws = require("nodejs-websocket")
 const config = require('./config/config.json')
-const EventEmitter2 = require('EventEmitter2').EventEmitter2
+const EventEmitter2 = require('eventemitter2').EventEmitter2
 
 const notifHistory = {}
 
